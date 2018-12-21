@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+  margin: 0 15px 0 15px;
+  height: 100%;
+
+}
+
+.header {
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    border-bottom: solid #EAEAEB;
+    text-align: right;
+    background-color: rgb(136, 133, 133);
+    line-height: 70px;
+}
+
+.topnav img{
+  float: left;
+  height: 65px;
+}
+
+#toggle{
+    display: none;
+}
+
+/* Style the topnav links */
+.menu {
+    margin: 0 30px 0 0
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(226, 224, 224);
+    margin: 0 10px;
+}
+
+span{
+    color: #54D17A;
+}
+.topnav label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  border: 1px solid rgb(239, 239, 243);
+  word-wrap: break-word;
+}
+
+.status {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.leftcolumn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  border: 1px solid rgb(239, 239, 243);
+  word-wrap: break-word;
+
+}
+
+.card {
+  background-color: white;
+  padding: 5px;
+  margin-top: 2px;
+
+}
+
+.central:after {
+  content: "";
+  display: table;
+  clear: both;
+  border: 1px solid blue;
+  word-wrap: break-word;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.record form {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td{
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even)
+{background-color: #f2f2f2
+}
+
+
+.form3 {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 100%;
+  border: 0;
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  
+}.form button:hover, .form button:active{
+  background: #FFA500;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(208, 243, 243);
+  outline: none;
+}
+input[type=textarea-comment], input[type=number], input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f0dddd;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: rgb(136, 133, 133);
+  bottom: 0px;
+  padding: 2px;
+  width: 100%;
+  margin-bottom: 0%;
+  position: relative;
+}
+select{
+  float: left;
+  width: 100%;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout for less than 635px wide, makes links hidded until user clicks on the simbol */
+@media only screen and (max-width: 635px) {
+    .topnav label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .header {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+  .rightcolumn{
+   display: none;
+  }
+}

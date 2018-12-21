@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>iReporter</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="topnav">
+      <img src="../images/image.png"/>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="adashboard.html">Dashboard</a>
+        <a href="arecords.html"><span>Records</span></a>
+        <!--<a href="viewinterven.html">View Interventions</a>-->
+        <a href="../login.html">Logout</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="central">
+    <div class="leftcolumn">
+      <div class="card">
+        <h4>Welcome to iReporter, Username</h4>
+        
+        <div class="form">
+          <div>
+            <h1>Admin's Records</h1>
+            <div class="record">
+              <div class="form">
+                <h2>Viewing Incidents</h2>
+                <div style="overflow-x: auto;">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><strong>Id</strong></th>
+                        <th><strong>Name</strong></th>
+                        <th><strong>Red Flag</strong></th>
+                        <th><strong>GPS Location</strong></th>
+                        <th><strong>Picture</strong></th>
+                        <th><strong>Video</strong></th>
+                        <th><strong>Comment</strong></th>
+                        <th><strong>DELETE</strong></th>
+                        <th><strong>Status</strong></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center">
+                          <a href="#">Delete</a>
+                        </td>
+                        <td align="center">
+                          <select id="status" name="status" required>
+                          <option value="resolve">Resolved</option>
+                          <option value="pend">Under Investigation</option>
+                          <option value="reject">Rejected</option>
+                        </select>
+                        <label for="file" style="cursor: pointer;"><a href="#">Update Status</a></label>
+                      </td>
+                      </tr>
+                      <td align="center">
+                      </td>
+                    </tbody>
+                  </table>
+                </div>
+              </div></div>
+              <p style="color:#FF0000;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rightcolumn">
+        <div class="card">
+          <p>Report Corruption: Toll Free </br>
+            <span style="color: #FF0000">0800100770 | 0772634743</span></span> </p>
+            <div class="form">
+              <p>Welcome to Dashboard.</p>
+              <p><a href="../home.html">User-Home</a><p>
+              <!--<p><a href="addredflag.html">Add Redflag</a><p>
+              <p><a href="addinterven.html">Interventions</a><p>-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer"> 
+          <p>iReporter &#169 2018 </p>
+          <p>Contact information: <a href="mailto:info@ireporter.com">info@ireporter.com</a></p>
+        </div>
+      </body>
+      </html>

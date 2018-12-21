@@ -30,6 +30,7 @@ A User can report or create their red-flag or an Intervention.
 A user is able to edit/update their own report (redflag or intervention) as long as it has not been approved or rejected yet.
 A user can also delete their report / intervention
 A user can add GPS to their report.
+
 https://araali1.github.io/iReporter-UI/login.html
 
 HTML

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>iReporter</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/script.js"></script>
+  </head>
+  
+
+  <body>
+    <div class="header">
+      <div class="topnav">
+        <img src="images/image.png"/>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+          <a href="home.html">Home</a>
+          <a href="addredflag.html">Red Flag</a>
+          <a href="addinterven.html"><span>Intervention</span></a>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="central">
+      <div class="leftcolumn">
+        <div class="card">
+          <h4>Welcome to iReporter, Username</h4>
+          <div class="form">
+            <div>
+              <h1>Update || Edit Intervention</h1>
+              <form name="form" method="post" action="">
+                <input type="hidden" name="new" value="1" />
+                <p><input type="date" name="date" placeholder="dd/mm/yy" required /></p>
+                
+                <p><input type="number" name="userID" placeholder="created By" required /></p>
+                
+                <p><select id="type" name="redflag" required>
+                  <option value="transport">Transport</option>
+                  <option value="health">Health</option>
+                  <option value="water">Water</option>
+                  <option value="land">Land</option>
+                </select></br>
+              </br></b>
+              <label for="gps" style="cursor: pointer">Click for GPS </label></p>
+              <p><textarea name="textarea">Wassup!</textarea></p>
+              
+              <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+              <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+              <p><img id="output" width="70"/></p>
+              
+              <p><input type="" accept="video/*" name="video" id="file" onchange="loadFile(event)" style="display: none;"></p>
+              <p><label for="file" style="cursor: pointer;">Upload Video</label></p>
+              <p><img id="output" width="70"/></p>
+              
+              <p><input name="submit" type="submit" value="UPDATE"/></p>
+            </form>
+            <p style="color:#FF0000;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="rightcolumn">
+      <div class="card">
+        <p>Report Corruption: Toll Free </br>
+          <span style="color: #FF0000">0800100770 | 0772634743</span></span> </p>
+          <div class="form">
+            <p>Welcome!</p>
+            <p><a href="home.html">Home</a><p>
+              <p><a href="viewinterven.html">View Intervention</a></p>
+              <p><a href="viewred.html">View Redflags</a><p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>iReporter &#169 2018 </p>
+          <p>Contact information: <a href="mailto:info@ireporter.com">info@ireporter.com</a></p>
+          <a href="login.html">Logout</a>
+        </div>
+      </body>
+      </html>

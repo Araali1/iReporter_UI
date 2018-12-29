@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>iReporter</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <div class="topnav">
+    <img src="images/image.png"/>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="login.html">Login</a>
+      <a href="#"><span>Signup</span></a>
+      <!--<a href="#">Services</a>
+        <a href="#">FAQs</a>-->
+      </div>
+    </div>
+  </div>
+
+<div class="central">
+  <div class="leftcolumn">
+    <div class="card">
+      <h4>Hello, Signup to keep truck of your efforts to fight injustice!</h4>
+      <img src="images/Stop-Corruption.jpg"/>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class="form" id="form1">
+        <h1><span style='color: red'>S</span><span style='color: blue'>ignup</span></h1>
+        <p>Please fill in this form to create account</p>
+        <p>Report Corruption: Toll Free </br>
+          <span style="color: #FF0000">0800100770 | 0772634743</span></span> </p>
+          <form class="register_form" id="register" action="" method="post">
+            <input type="number" placeholder="id" id="userID" name="userID" hidden/>
+            
+            <input type="text" placeholder="First_Name" id="fname" name="fname" required/>
+            <input type="text" placeholder="Last_Name" id="lname" name="lname" required/>
+            <input type="text" placeholder="Other_Names" id="oname" name="oname" required/>
+
+            <input type="text" placeholder="user@email.com" id="email" name="email" required>
+            <input type="text" placeholder="0700000000" id="telno" name="telno" required>
+            <input type="text" placeholder="username" id="username" name="username" required>
+                    
+            <input type="date" placeholder="dd/mm/yy" id="date" name="date" required>
+            <input type="password" placeholder="password" id="pass" name="password" required/>
+            <input type="password" placeholder="confirm password" id="confpass" name="confirmpassword" required/>
+
+            <input type="text" placeholder=" " id="isadmin" name="isadmin"/>
+            <button>Register</button>
+            <p class="message">Already Registered?<a href="login.html" onchange="dispuser(this.form.username.value)">Login Here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <p>iReporter &#169 2018 </p>
+  <p>Contact information: <a href="mailto:info@ireporter.com">info@ireporter.com</a>.</p>
+</div>
+</body>
+</html>

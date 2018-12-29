@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>iReporter</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="topnav">
+    <img src="images/image.png"/>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="#"><span>Login</span></a>
+      <a href="signup.html">Signup</a>
+      <!-- <a href="#">Services</a>
+      <a href="#">FAQs</a> -->
+    </div>
+  </div>
+</div>
+
+<div class="central">
+  <div class="leftcolumn">
+    <div class="card">
+      <h4>Hello, Login to truck progress of your efforts to fight injustice!</h4>
+      <img src="images/Stop-Corruption.jpg"/>
+    </div>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <div class="form" id="form1">
+        <h1><span style='color: red'>L</span><span style='color: blue'>ogin</span></h1>
+        <p>Report Corruption: Toll Free </br>
+          <span style="color: #FF0000">0800100770 | 0772634743</span></span> </p>
+          <form class="login_form" id="login" action="" method="post">
+            <input type="text" placeholder="user@email.com or 0700000000" id="email" name="email" required>
+            <input type="password" placeholder="password" id="pass" name="password" required/>
+            <input type="checkbox" checked="checked" name="remember"> Remember me</input>
+            <button type="submit">Login</button>
+            <p class="message">Not Registered? <a href="signup.html" onchange="dispuser(this.form.username.value)">Signup Here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="footer">
+  <p>iReporter &#169 2018 </p>
+  <p>Contact information: <a href="mailto:info@ireporter.com">info@ireporter.com</a>.</p>
+  <a href="home.html">Home</a>
+</div>
+</body>
+</html>

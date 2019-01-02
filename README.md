@@ -31,7 +31,7 @@ A user is able to edit/update their own report (redflag or intervention) as long
 A user can also delete their report / intervention
 A user can add GPS to their report.
 
-Click <a href="https://araali1.github.io/iReporter-UI/login.html">here</a> to view the User Interface
+Click <a href="https://araali1.github.io/iReporter_UI/login.html">HERE</a> to view the User Interface
 
 HTML
 CSS

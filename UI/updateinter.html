@@ -8,6 +8,7 @@
     <script src="js/script.js"></script>
   </head>
   
+
   <body>
     <div class="header">
       <div class="topnav">
@@ -16,8 +17,8 @@
         <input type="checkbox" id="toggle">
         <div class="menu">
           <a href="home.html">Home</a>
-          <a href="addredflag.html">Red Flag</a>
-          <a href="addinterven.html"><span>Intervention</span></a>
+          <a href="addredflag.html">Red Flags</a>
+          <a class="active" href="addinterven.html">Interventions</a>
           <a href="login.html">Logout</a>
         </div>
       </div>
@@ -29,7 +30,7 @@
           <h4>Welcome to iReporter, Username</h4>
           <div class="form">
             <div>
-              <h1>Update | Edit Intervention</h1>
+              <h1>Update || Edit Intervention</h1>
               <form name="form" method="post" action="">
                 <input type="hidden" name="new" value="1" />
                 <p><input type="date" name="date" placeholder="dd/mm/yy" required /></p>
@@ -69,14 +70,13 @@
           <div class="form">
             <p>Welcome!</p>
             <p><a href="home.html">Home</a><p>
-              <p><a href="viewinterven.html">View Intervention</a></p>
               <p><a href="viewred.html">View Redflags</a><p>
-
+              <p><a href="viewinterven.html">View Intervention</a></p>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="footer">
           <p>iReporter &#169 2018 </p>
           <p>Contact information: <a href="mailto:info@ireporter.com">info@ireporter.com</a></p>

@@ -35,7 +35,7 @@ but then for a new user, well be requested to signup first to get recognition. R
 - A user can also delete their report / intervention
 - A user can add GPS to their report.
 
-[UI](https://araali1.github.io/iReporter-UI/login.html)
+[UI](https://araali1.github.io/iReporter_UI/login.html)
 
 [HTML5](https://www.w3schools.com/html/default.asp)
 
